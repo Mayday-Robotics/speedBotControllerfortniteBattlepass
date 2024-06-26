@@ -68,8 +68,8 @@ void usercontrol(void) {
   // User control code here, inside the loop
 
   while (1) {
-    Drivetrain.setTurnVelocity(Controller.Axis4.position(), percent);
-    Drivetrain.setDriveVelocity(Controller.Axis2.position(), percent);
+    Drivetrain.setTurnVelocity(abs(Controller.Axis4.position()), percent);
+    Drivetrain.setDriveVelocity(abs(Controller.Axis2.position()), percent);
 
 
     if (Controller.Axis2.position() > 0) {
