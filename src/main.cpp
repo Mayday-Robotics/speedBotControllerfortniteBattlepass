@@ -62,6 +62,8 @@ void autonomous(void) {
   Drivetrain.drive(reverse);
   wait(2, seconds);
   Drivetrain.stop();
+
+  return;
 }
 
 void usercontrol(void) {
@@ -86,6 +88,8 @@ void usercontrol(void) {
 
     wait(20, msec);
   }
+
+  return;
 }
 
 
