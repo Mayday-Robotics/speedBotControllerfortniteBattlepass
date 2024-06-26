@@ -19,10 +19,10 @@ brain Brain;
 
 controller Controller = controller(primary);
 
-motor LeftMotor = motor(PORT2, ratio18_1);
+motor LeftMotor = motor(PORT2, ratio18_1, true); // Blue motor 18-1 ratio, true for reversed (idk i assembled it wonky)
 motor_group LeftMotorGroup = motor_group(LeftMotor);
 
-motor RightMotor = motor(PORT1, ratio18_1);
+motor RightMotor = motor(PORT1, ratio18_1, true); 
 motor_group RightMotorGroup = motor_group(RightMotor);
 
 drivetrain Drivetrain = drivetrain(LeftMotorGroup, RightMotorGroup, 12.5664, 10, 6.5, inches, 1.0);
